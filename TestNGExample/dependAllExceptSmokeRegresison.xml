@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+	<test name="All except Smoke and Regression">
+		<groups>
+			<run>
+				<exclude name="smoke" />
+				<exclude name="regression" />
+			</run>
+		</groups>
+		<packages>
+		<package name="testexercise"></package>
+		<package name="testexample"></package>
+		</packages>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="7" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="12567" started-at="2019-02-16T09:59:23Z" finished-at="2019-02-16T09:59:35Z">
+    <groups>
+      <group name="Selenium">
+        <method signature="Selenium.launchURL()[pri:0, instance:suiteBase.Selenium@73846619]" name="launchURL" class="suiteBase.Selenium"/>
+        <method signature="Selenium.webTable()[pri:0, instance:suiteBase.Selenium@73846619]" name="webTable" class="suiteBase.Selenium"/>
+      </group> <!-- Selenium -->
+    </groups>
+    <test name="Test" duration-ms="12567" started-at="2019-02-16T09:59:23Z" finished-at="2019-02-16T09:59:35Z">
+      <class name="suiteBase.Selenium">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:suiteBase.Selenium@73846619]" name="launchBrowser" is-config="true" duration-ms="4181" started-at="2019-02-16T09:59:23Z" finished-at="2019-02-16T09:59:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="launchURL()[pri:0, instance:suiteBase.Selenium@73846619]" name="launchURL" duration-ms="7529" started-at="2019-02-16T09:59:27Z" finished-at="2019-02-16T09:59:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method status="PASS" signature="webTable()[pri:0, instance:suiteBase.Selenium@73846619]" name="webTable" duration-ms="26" started-at="2019-02-16T09:59:34Z" depends-on-methods="suiteBase.Selenium.launchURL" finished-at="2019-02-16T09:59:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webTable -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:suiteBase.Selenium@73846619]" name="closeBrowser" is-config="true" duration-ms="795" started-at="2019-02-16T09:59:34Z" finished-at="2019-02-16T09:59:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- suiteBase.Selenium -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

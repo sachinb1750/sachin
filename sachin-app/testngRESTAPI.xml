@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteRESTAPI">
+	<listeners>
+		<listener class-name="listenors.testnglistenors"></listener>
+	</listeners>
+	<test name="RESTAPI">
+		<!-- <packages>
+			<package name="moduleRESTAPI"></package>
+		</packages>
+		<classes>
+			<class name="suitebase.RESTAPITest" />
+		</classes> <!-- Test -->
+	</test> 
+</suite> <!-- Suite -->

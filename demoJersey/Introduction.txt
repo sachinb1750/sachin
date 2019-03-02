@@ -1,0 +1,10 @@
+Creating Jersey Maven Project with jersey quickstart webapp type
+
+Resolving pom dependencies 
+
+Downloading Server
+Java EE Perspective 
+Adding Server Window
+Adding Server ( Apache Tomcat 8.5 ) and configuring forlder path
+Starting the server 
+Project properties - Target Runtime - Selecting Server

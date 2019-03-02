@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+	<test name="Test Example 1">
+		<!-- Same package classes can also be distributed -->
+		<!-- Just to keep all classes in one folder if we want so and in different 
+			modules -->
+		<classes><!-- We can also write directly package name here as well -->
+			<class name="testexample.testngbasic2">
+				<methods>
+					<exclude name="sachin.*" />
+				</methods>
+			</class>
+			<!-- If we have are using single line that above format is used -->
+			<!-- For multiple lines we need to have open and close tag seperately -->
+			<class name="testexample.testngbasic1">
+				<methods>
+					<exclude name="demo3" />
+				</methods>
+				<!-- Where we want to exclude few test cases in any module -->
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test Example 2">
+		<classes><!-- We can also write directly package name here as well -->
+			<class name="testexample.testngLogin">
+				<methods>
+					<include name="webLogin" />
+				</methods>
+				<!-- When we want include few test cases only from any module -->
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test Exercise">
+		<packages><!-- We can also write directly package name here as well -->
+			<package name="testexercise" />
+		</packages>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

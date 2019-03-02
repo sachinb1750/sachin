@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" parallel="tests" thread-count="5">
+<listeners><listener class-name="listenors.testnglistenors"></listener></listeners>
+<parameter name="Regression_TCs" value="Regression TCs Execution Started"></parameter>
+<parameter name="TC_1" value="Starting First Test Case : Global"></parameter>
+<parameter name="TC_2" value="Starting Second Test Case : Global"></parameter>
+	<test name="Regression 1">
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+		<class name="testexample.testngbasic1">
+		<parameter name="TC_2" value="Starting Second Test Case  :Local Regression 1"></parameter>
+		</class>
+		</classes>
+		<!-- <packages>
+		<package name="testexercise"></package>
+		</packages> -->
+	</test> <!-- Test -->
+	<test name="Regression 2">
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+		<classes>
+		<class name="testexercise.testng1">
+		<parameter name="TC_2" value="Starting Second Test Case  :Local - Regression 2"></parameter>
+		</class>
+		<class name="listenors.testnglistenors"></class>
+		</classes>
+		<!-- <packages>
+		<package name="testexercise"></package>
+		</packages> -->
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

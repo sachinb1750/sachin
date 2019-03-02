@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="tests">
+  <parameter name="TC_2" value="Starting Second Test Case : Global"/>
+  <parameter name="TC_1" value="Starting First Test Case : Global"/>
+  <parameter name="Regression_TCs" value="Regression TCs Execution Started"/>
+  <listeners>
+    <listener class-name="listenors.testnglistenors"/>
+  </listeners>
+  <test thread-count="5" name="Regression 2(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testexercise.testng1">
+        <parameter name="TC_2" value="Starting Second Test Case  :Local - Regression 2"/>
+        <methods>
+          <include name="regression3"/>
+        </methods>
+      </class> <!-- testexercise.testng1 -->
+    </classes>
+  </test> <!-- Regression 2(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

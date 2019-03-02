@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>TestNG:  All except Smoke and Regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>All except Smoke and Regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 14 18:44:48 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4111 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td>regression smoke </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testexercise.testngLoginExamples.mobileLogin()'><b>mobileLogin</b><br>Test class: testexercise.testngLoginExamples</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method testexercise.testngLoginExamples.mobileLogin() didn&apos;t finish within the time-out 4000
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1675763772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1675763772'><pre>org.testng.internal.thread.ThreadTimeoutException: Method testexercise.testngLoginExamples.mobileLogin() didn&apos;t finish within the time-out 4000
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>4</td>
+<td>testexercise.testngLoginExamples@68be2bc2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testexample.testngLogin.apiLogin()'><b>apiLogin</b><br>Test class: testexample.testngLogin</td>
+<td></td>
+<td>0</td>
+<td>testexample.testngLogin@1593948d</td></tr>
+<tr>
+<td title='testexercise.testngLoginExamples.apiLogin1()'><b>apiLogin1</b><br>Test class: testexercise.testngLoginExamples</td>
+<td></td>
+<td>0</td>
+<td>testexercise.testngLoginExamples@68be2bc2</td></tr>
+<tr>
+<td title='testexercise.testngLoginExamples.apiLogin2()'><b>apiLogin2</b><br>Test class: testexercise.testngLoginExamples</td>
+<td></td>
+<td>0</td>
+<td>testexercise.testngLoginExamples@68be2bc2</td></tr>
+<tr>
+<td title='testexercise.testngLoginExamples.apiLogin3()'><b>apiLogin3</b><br>Test class: testexercise.testngLoginExamples</td>
+<td></td>
+<td>0</td>
+<td>testexercise.testngLoginExamples@68be2bc2</td></tr>
+<tr>
+<td title='testexercise.testngLoginExamples.apiLogin4()'><b>apiLogin4</b><br>Test class: testexercise.testngLoginExamples</td>
+<td></td>
+<td>0</td>
+<td>testexercise.testngLoginExamples@68be2bc2</td></tr>
+<tr>
+<td title='testexercise.testng1.demo1()'><b>demo1</b><br>Test class: testexercise.testng1</td>
+<td></td>
+<td>0</td>
+<td>testexercise.testng1@2a5ca609</td></tr>
+<tr>
+<td title='testexample.testngbasic1.demo1()'><b>demo1</b><br>Test class: testexample.testngbasic1</td>
+<td></td>
+<td>0</td>
+<td>testexample.testngbasic1@482f8f11</td></tr>
+<tr>
+<td title='testexercise.testng2.demo2()'><b>demo2</b><br>Test class: testexercise.testng2</td>
+<td></td>
+<td>0</td>
+<td>testexercise.testng2@20e2cbe0</td></tr>
+<tr>
+<td title='testexercise.testng1.demo3()'><b>demo3</b><br>Test class: testexercise.testng1</td>
+<td></td>
+<td>0</td>
+<td>testexercise.testng1@2a5ca609</td></tr>
+<tr>
+<td title='testexample.testngbasic1.demo3()'><b>demo3</b><br>Test class: testexample.testngbasic1</td>
+<td></td>
+<td>0</td>
+<td>testexample.testngbasic1@482f8f11</td></tr>
+<tr>
+<td title='testexample.testngLogin.mobileLogin()'><b>mobileLogin</b><br>Test class: testexample.testngLogin</td>
+<td></td>
+<td>0</td>
+<td>testexample.testngLogin@1593948d</td></tr>
+<tr>
+<td title='testexample.testngbasic2.sachin1()'><b>sachin1</b><br>Test class: testexample.testngbasic2</td>
+<td></td>
+<td>0</td>
+<td>testexample.testngbasic2@2a2d45ba</td></tr>
+<tr>
+<td title='testexample.testngbasic2.sachin2()'><b>sachin2</b><br>Test class: testexample.testngbasic2</td>
+<td></td>
+<td>0</td>
+<td>testexample.testngbasic2@2a2d45ba</td></tr>
+<tr>
+<td title='testexample.testngbasic2.tc1()'><b>tc1</b><br>Test class: testexample.testngbasic2</td>
+<td></td>
+<td>0</td>
+<td>testexample.testngbasic2@2a2d45ba</td></tr>
+<tr>
+<td title='testexample.testngbasic2.tc2()'><b>tc2</b><br>Test class: testexample.testngbasic2</td>
+<td></td>
+<td>0</td>
+<td>testexample.testngbasic2@2a2d45ba</td></tr>
+<tr>
+<td title='testexample.testngLogin.webLogin()'><b>webLogin</b><br>Test class: testexample.testngLogin</td>
+<td></td>
+<td>0</td>
+<td>testexample.testngLogin@1593948d</td></tr>
+</table><p>
+</body>
+</html>
