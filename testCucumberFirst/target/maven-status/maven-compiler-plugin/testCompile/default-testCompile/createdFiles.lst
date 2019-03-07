@@ -1,0 +1,3 @@
+stepDefinations\MyStepDefinitions.class
+cucumberOptions\TestRunner.class
+org\demo\selenium\test\MercuryTest.class

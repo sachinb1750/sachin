@@ -1,0 +1,40 @@
+package org.demo.selenium.test;
+
+import org.demo.selenium.pages.MercuryFindFlightPage;
+import org.demo.selenium.pages.MercuryLoginPage;
+import org.demo.selenium.utils.BaseClass;
+import org.demo.selenium.utils.DriverManager;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+/**
+ * Testcase for MercuryTest
+ */
+public class MercuryTest extends BaseClass
+{
+	WebDriver driver;
+	String strLoginID, strPassword;
+	//Sachin
+   @Test
+   public void ValidLoginToMercury() throws InterruptedException
+   {
+	   driver = DriverManager.getDriver();	
+	   strLoginID ="mercury"; strPassword ="mercury";
+	   MercuryLoginPage loginPage = new MercuryLoginPage(driver);
+	   MercuryFindFlightPage mercuryFindFlightPage = new MercuryFindFlightPage(driver);
+	   mercuryFindFlightPage = loginPage.performMercuryLogin(strLoginID, strPassword);
+	   mercuryFindFlightPage.validateMercuryFindFlightPage();
+   }
+ 
+   @Test(enabled=false)
+   public void InvalidLoginToMercury() throws InterruptedException
+   {
+	   driver = DriverManager.getDriver();	
+	   strLoginID ="mercury"; strPassword ="mercury1";
+	   MercuryLoginPage loginPage = new MercuryLoginPage(driver);
+	   MercuryFindFlightPage mercuryFindFlightPage = new MercuryFindFlightPage(driver);
+	   mercuryFindFlightPage = loginPage.performMercuryLogin(strLoginID, strPassword);
+	   mercuryFindFlightPage.validateMercuryFindFlightPage();
+   }
+   
+}
