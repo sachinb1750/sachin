@@ -89,7 +89,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 170942,
+  "duration": 96619,
   "status": "passed"
 });
 formatter.scenario({
@@ -158,7 +158,7 @@ formatter.match({
   "location": "MyStepDefinitions.initialize_the_browser_with_Chrome()"
 });
 formatter.result({
-  "duration": 4392121894,
+  "duration": 4511728255,
   "status": "passed"
 });
 formatter.match({
@@ -171,7 +171,7 @@ formatter.match({
   "location": "MyStepDefinitions.navigate_to_Site(String)"
 });
 formatter.result({
-  "duration": 2228400578,
+  "duration": 1981179440,
   "status": "passed"
 });
 formatter.match({
@@ -188,7 +188,7 @@ formatter.match({
   "location": "MyStepDefinitions.user_enters_user_and_password(String,String)"
 });
 formatter.result({
-  "duration": 119782969336,
+  "duration": 19953274204,
   "status": "passed"
 });
 formatter.match({
@@ -201,14 +201,14 @@ formatter.match({
   "location": "MyStepDefinitions.user_logged_in(String)"
 });
 formatter.result({
-  "duration": 898636255,
+  "duration": 897503722,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepDefinitions.close_Browser(DataTable)"
 });
 formatter.result({
-  "duration": 737276621,
+  "duration": 996674957,
   "status": "passed"
 });
 });
