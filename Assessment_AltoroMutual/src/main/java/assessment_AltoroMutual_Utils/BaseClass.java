@@ -102,17 +102,19 @@ public class BaseClass {
 	@AfterClass
 	public void killClass() {
 		DriverManager.killDriverInstance();
+		TestUtilities.archiveExtentReports(getClassName());
+		TestUtilities.archiveTestNgReports(getClassName());
 	}
 
 	@AfterSuite
 	public void killResources() {
-		TestUtilities.archiveExtentReports(getTestRunId());
-		TestUtilities.archiveTestNgReports(getTestRunId());
 	}
 
 	//Gets the newly created test run id
 	public static String getTestRunId() {
 		return testRunId;
 	}
-
+	public static String getClassName() {
+		return className;
+	}
 }
