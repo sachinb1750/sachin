@@ -1,15 +1,21 @@
 package cucumberOptions;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-//import cucumber.api.testng.AbstractTestNGCucumberTests;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+//import org.junit.After;
+//import org.junit.AfterClass;
+//import org.junit.Before;
+//import org.junit.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
-@RunWith(Cucumber.class)
+//import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+//import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
+
+//@RunWith(Cucumber.class)
 @CucumberOptions(
 	    plugin     =   {
 	    		"html:target/cucumber" , 
@@ -19,24 +25,27 @@ import cucumber.api.junit.Cucumber;
 	    		},
 		features   =   {"src/test/java/features"},
 		glue       =   {"stepDefinations"},
-		tags       =   {"@Login"},
+		tags       =   {"@Calculater1,@Login"},
 		dryRun     =   false,
 		strict     =   false,
 		monochrome =   false
 		)
-//public class TestRunner extends AbstractTestNGCucumberTests
-public class TestRunner {
+public class TestRunner extends AbstractTestNGCucumberTests {
+//public class TestRunner {
 	@BeforeClass()
 	static public void beforeClassMethod() {
 		System.out.println("Executing Before Class Method");
 	}
-
-	@Before()
+	@BeforeSuite
+	static public void beforeSuiteMethod() {
+		System.out.println("beforeSuiteMethod");
+	}
+	@BeforeMethod()
 	static public void beforeMethod() {
 		System.out.println("Executing Before Method");
 	}
 
-	@After()
+	@AfterMethod
 	static public void afterMethod() {
 		System.out.println("Printing After Method");
 	}

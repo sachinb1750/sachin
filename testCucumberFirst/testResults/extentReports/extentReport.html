@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 6, 2019 07:58:54 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 10, 2019 07:30:38 AM</span>
 				</a>
 			</li>
 			<li>
@@ -72,7 +72,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li class='divider'></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
 			</div>
@@ -133,7 +134,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -141,6 +142,20 @@
 			</div>
 		</div>
 		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> others
+				</div>
+			</div>
+		</div>
 		
 	</div>
 </div>
@@ -155,14 +170,14 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>MercuryTest</span>
-						<span class='test-time'>Mar 6, 2019 07:58:54 AM</span>
+						<span class='test-time'>Mar 10, 2019 07:30:38 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 6, 2019 07:58:54 AM</span>
-	<span class='label end-time'>Mar 6, 2019 08:01:08 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 2m 13s+408ms</span>
+	<span class='label start-time'>Mar 10, 2019 07:30:38 AM</span>
+	<span class='label end-time'>Mar 10, 2019 07:31:07 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 28s+246ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -173,21 +188,42 @@
 		
 				<li class='node level-1 leaf pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
-						<h5 class='node-name'>InvalidLoginToMercury</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 6, 2019 07:58:55 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-						<span class='test-status right pass'>pass</span>
-								<span class='category label white-text'>Test_Level_Report</span>
-					</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='3'>
-					<div class='collapsible-header'>
 						<h5 class='node-name'>ValidLoginToMercury</h5>
-						<span class="node-time label grey lighten-1 white-text">Mar 6, 2019 08:01:08 AM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+						<span class="node-time label grey lighten-1 white-text">Mar 10, 2019 07:31:07 AM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 28s+215ms</span>
 						<span class='test-status right pass'>pass</span>
 								<span class='category label white-text'>Test_Level_Report</span>
 					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>7:30:51 AM</td>
+													<td class='step-details'>VALIDLOGINTOMERCURY Execution Started</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>7:31:07 AM</td>
+													<td class='step-details'>VALIDLOGINTOMERCURY Execution Ended</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:31:07 AM</td>
+													<td class='step-details'>PASSED</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
 				</li>
 	</ul>
 					</div>
@@ -267,7 +303,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 6, 2019 07:58:54 AM</td>
+										<td>Mar 10, 2019 07:30:38 AM</td>
 										<td class='linked' test-id='1'>MercuryTest</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -280,12 +316,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>Test_Level_Report</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -301,13 +337,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 6, 2019 07:58:55 AM</td>
-										<td class='linked' test-id='2'>MercuryTest.InvalidLoginToMercury</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 6, 2019 08:01:08 AM</td>
-										<td class='linked' test-id='3'>MercuryTest.ValidLoginToMercury</td>
+										<td>Mar 10, 2019 07:30:38 AM</td>
+										<td class='linked' test-id='2'>MercuryTest.ValidLoginToMercury</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -336,31 +367,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>0</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 6, 2019 07:58:54 AM</div>
+					<div class='panel-lead'>Mar 10, 2019 07:30:38 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 6, 2019 08:02:11 AM</div>
+			 		<div class='panel-lead'>Mar 10, 2019 07:31:07 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 3m 16s+868ms</div>
+					<div class='panel-lead'>0h 0m 29s+166ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -386,7 +417,7 @@
 							</tr>
 							<tr>
 								<td>Run_Date</td>
-								<td>Wed Mar 06 07:58:54 IST 2019</td>
+								<td>Sun Mar 10 07:30:38 IST 2019</td>
 							</tr>
 					</table>
 				</div>
@@ -414,7 +445,7 @@
 						</tr>
 						<tr>
 							<td>Test_Level_Report</td>
-							<td>2</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -434,7 +465,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
+				passParent: 1,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -442,13 +473,13 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 0,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 0,
+				infoChild: 2,
 				exceptionsChild: 0,
 				
 				passGrandChild: 0,

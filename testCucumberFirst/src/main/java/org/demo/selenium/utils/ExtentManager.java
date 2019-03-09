@@ -25,7 +25,7 @@ public class ExtentManager {
 		}else {
 			extent=new ExtentReports();
 			extent.attachReporter(getHtmlReporter());
-			extent.setSystemInfo("Owner", "DemoProject");
+			extent.setSystemInfo("Sachin", "DemoAutomationSolution");
 			extent.setSystemInfo("Environment",BaseClass.property.getProperty("environment"));
 			extent.setSystemInfo("Platform",BaseClass.property.getProperty("platform"));
 			extent.setSystemInfo("Run_Date",d.toString());

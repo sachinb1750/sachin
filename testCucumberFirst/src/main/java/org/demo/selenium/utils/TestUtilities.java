@@ -26,7 +26,20 @@ import org.openqa.selenium.WebDriver;
 public class TestUtilities {
 
 	WebDriver driver = DriverManager.getDriver();
-
+	public static void archiveExtentReports(String testName) {
+		//File scrFile = new File(Constants.getExtentReportsPath()+"srcFile.html");
+		Date d = new Date();
+		String reportName = testName + "_" + d.toString().replaceAll("[ :]", "_") + ".html";
+		String absoluteExtentReportPath = Constants.getExtentReportsPath() + "extentReport.html";
+		File scrFile = new File(absoluteExtentReportPath);
+		try {
+			//FileUtils.copyFile(absoluteExtentReportPath, new File(scrFile));
+			FileUtils.copyFile(scrFile, new File(Constants.getArchived_ExtentReportPath() + reportName));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	public static void captureScreenshot(String testName) {
 
 		

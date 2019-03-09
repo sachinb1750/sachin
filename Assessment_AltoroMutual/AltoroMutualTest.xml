@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AltoroMutual Automation Execution">
+	<listeners>
+		<listener
+			class-name="assessment_AltoroMutual_Utils.CustomListeners" />
+	</listeners>
+
+	<test name="Altoro Mutual Test">
+		<packages>
+			<package name="assessment_AltoroMutual_Tests"></package>
+		</packages>
+	</test>
+</suite> <!-- AltoroMutual Automation Execution -->

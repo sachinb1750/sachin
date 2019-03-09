@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.925 s - in TestSuite
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 0.656 s <<< FAILURE! - in TestSuite
+setUpClass(cucumberOptions.TestRunner)  Time elapsed: 0.494 s  <<< FAILURE!
+cucumber.runtime.CucumberException: Couldn't load plugin class: com.cucumber.listener.ExtentCucumberFormatter
+Caused by: java.lang.ClassNotFoundException: com.cucumber.listener.ExtentCucumberFormatter
+
+tearDownClass(cucumberOptions.TestRunner)  Time elapsed: 0.507 s  <<< FAILURE!
+java.lang.NullPointerException
+

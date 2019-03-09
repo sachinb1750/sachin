@@ -52,6 +52,7 @@ public class BaseClass {
 
 		//Creates a test Node at class level in the extent report
 		className = this.getClass().getSimpleName().toString();
+		testRunId = className;
 		logger = Logger.getLogger(className);
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "/resources/propertyFiles/log4j.properties");
 	}
@@ -90,7 +91,7 @@ public class BaseClass {
 
 	@AfterSuite
 	public void killResources() {
-
+		TestUtilities.archiveExtentReports(getTestRunId());
 	}
 
 	//Gets the newly created test run id

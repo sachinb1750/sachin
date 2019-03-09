@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 10 23:29:35 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>27 seconds (27131 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='assessment_AltoroMutual_Tests.AltoroMutual_Test.account_information_page_test()'><b>account_information_page_test</b><br>Test class: assessment_AltoroMutual_Tests.AltoroMutual_Test<br/>
+<a href="#Output-1379207867" onClick='toggleBox("Output-1379207867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1379207867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1379207867">
+Clicked on Element having locater : -> link text: View Account Summary]<br/>
+Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800003<br/>
+Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']]<br/>
+Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800002<br/>
+Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']]<br/>
+Element is present having locater: -> xpath: //td[contains(text(),'Ending balance as of')]]<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>assessment_AltoroMutual_Tests.AltoroMutual_Test@6f7fd0e6</td></tr>
+<tr>
+<td title='assessment_AltoroMutual_Tests.AltoroMutual_Test.login_page_test()'><b>login_page_test</b><br>Test class: assessment_AltoroMutual_Tests.AltoroMutual_Test<br/>
+<a href="#Output-846918683" onClick='toggleBox("Output-846918683", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-846918683" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-846918683">
+Element is present having locater: -> xpath: //img[@src='/images/logo.gif']]<br/>
+Element is present having locater: -> link text: ONLINE BANKING LOGIN]<br/>
+Element is present having locater: -> css selector: #LinkHeader2]<br/>
+Element is present having locater: -> css selector: #LinkHeader3]<br/>
+Element is present having locater: -> css selector: #LinkHeader4]<br/>
+Credentials Set successfully<br/>
+Clicked on Element having locater : -> xpath: //input[@value='Login']]<br/>
+Element is present having locater: -> xpath: //span[@id='_ctl0__ctl0_Content_Main_message']]<br/>
+Credentials Set successfully<br/>
+Clicked on Element having locater : -> xpath: //input[@value='Login']]<br/>
+Element is present having locater: -> xpath: //h1[contains(text(),'Hello John Smith')]]<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>assessment_AltoroMutual_Tests.AltoroMutual_Test@6f7fd0e6</td></tr>
+<tr>
+<td title='assessment_AltoroMutual_Tests.AltoroMutual_Test.online_banking_home_page_test()'><b>online_banking_home_page_test</b><br>Test class: assessment_AltoroMutual_Tests.AltoroMutual_Test<br/>
+<a href="#Output-534753234" onClick='toggleBox("Output-534753234", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-534753234" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-534753234">
+Element is present having locater: -> xpath: //select[@name='listAccounts']]<br/>
+Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800003<br/>
+Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']]<br/>
+Element is present having locater: -> xpath: //h1[contains(text(),'Account History -')]]<br/>
+String contains Today's Date : Ending balance as of 3/10/19 12:59 PM<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>assessment_AltoroMutual_Tests.AltoroMutual_Test@6f7fd0e6</td></tr>
+<tr>
+<td title='assessment_AltoroMutual_Tests.AltoroMutual_Test.transfer_fund_page_test()'><b>transfer_fund_page_test</b><br>Test class: assessment_AltoroMutual_Tests.AltoroMutual_Test<br/>
+<a href="#Output-577127077" onClick='toggleBox("Output-577127077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-577127077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-577127077">
+Clicked on Element having locater : -> xpath: //a[contains(text(),'Transfer Funds')]]<br/>
+Element is present having locater: -> xpath: //h1[contains(text(),'Transfer Funds')]]<br/>
+Element is selected having locater :  -> xpath: //select[@id='fromAccount']] and Value : 800003<br/>
+Element is selected having locater :  -> css selector: #toAccount] and Value : 800002<br/>
+Sendkeys performed on Element haveing locater :  -> css selector: #transferAmount]<br/>
+Clicked on Element having locater : -> xpath: //input[@value='Transfer Money']]<br/>
+Element is present having locater: -> xpath: //span[contains(text(),'was successfully transferred from Account')]]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>assessment_AltoroMutual_Tests.AltoroMutual_Test@6f7fd0e6</td></tr>
+</table><p>
+</body>
+</html>

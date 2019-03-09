@@ -54,3 +54,13 @@
 2019-02-21 12:59:58,483 [main] INFO MercuryTest---InvalidLoginToMercury - INVALIDLOGINTOMERCURY Execution Ended
 2019-02-21 13:00:06,577 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Started
 2019-02-21 13:00:55,492 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Ended
+2019-03-10 07:11:36,482 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Started
+2019-03-10 07:11:52,171 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Ended
+2019-03-10 07:15:36,256 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Started
+2019-03-10 07:15:51,836 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Ended
+2019-03-10 07:21:39,354 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Started
+2019-03-10 07:21:54,967 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Ended
+2019-03-10 07:24:49,985 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Started
+2019-03-10 07:25:05,837 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Ended
+2019-03-10 07:30:51,603 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Started
+2019-03-10 07:31:07,179 [main] INFO MercuryTest---ValidLoginToMercury - VALIDLOGINTOMERCURY Execution Ended

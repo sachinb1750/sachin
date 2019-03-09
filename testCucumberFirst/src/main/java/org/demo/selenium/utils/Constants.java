@@ -23,6 +23,8 @@ public class Constants {
 	private static final String ARCHIVED_SCREENSHOT_PATH="./testResults/screenshotArchived/";
 	private static final String RUNNER_JSON_PATH="./resources/jsonFiles/Runner.json";
 	private static final String TEST_RUN_CONFIG_PATH="./resources/jsonFiles/testRunConfigurations.json";
+	private static final String EXTENTREPORT_PATH="./testResults/extentReports/";
+	private static final String ARCHIVED_EXTENTREPORT_PATH="./testResults/extentreportsArchived/";
 	
 	public static String getChromePath() {
 		return CHROME_PATH;
@@ -65,6 +67,12 @@ public class Constants {
 	public static String geTestRunnerConfigPath() {
 		return TEST_RUN_CONFIG_PATH;
 	}
-
+	public static String getArchived_ExtentReportPath() {
+		return ARCHIVED_EXTENTREPORT_PATH;
+	}
+	
+	public static String getExtentReportsPath() {
+		return EXTENTREPORT_PATH;
+	}
 
 }

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[Element is present having locater: -> xpath: //img[@src='/images/logo.gif']]]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> link text: ONLINE BANKING LOGIN]]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> css selector: #LinkHeader2]]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> css selector: #LinkHeader3]]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> css selector: #LinkHeader4]]]>
+    </line>
+    <line>
+      <![CDATA[Credentials Set successfully]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having locater : -> xpath: //input[@value='Login']]]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> xpath: //span[@id='_ctl0__ctl0_Content_Main_message']]]]>
+    </line>
+    <line>
+      <![CDATA[Credentials Set successfully]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having locater : -> xpath: //input[@value='Login']]]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> xpath: //h1[contains(text(),'Hello John Smith')]]]]>
+    </line>
+    <line>
+      <![CDATA[LOGIN_PAGE_TEST : Passed]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> xpath: //select[@name='listAccounts']]]]>
+    </line>
+    <line>
+      <![CDATA[Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800003]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']]]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> xpath: //h1[contains(text(),'Account History -')]]]]>
+    </line>
+    <line>
+      <![CDATA[String contains Today's Date : Ending balance as of 3/10/19 1:43 PM]]>
+    </line>
+    <line>
+      <![CDATA[ONLINE_BANKING_HOME_PAGE_TEST : Passed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having locater : -> xpath: //a[contains(text(),'Transfer Funds')]]]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> xpath: //h1[contains(text(),'Transfer Funds')]]]]>
+    </line>
+    <line>
+      <![CDATA[Element is selected having locater :  -> xpath: //select[@id='fromAccount']] and Value : 800003]]>
+    </line>
+    <line>
+      <![CDATA[Element is selected having locater :  -> css selector: #toAccount] and Value : 800002]]>
+    </line>
+    <line>
+      <![CDATA[Sendkeys performed on Element haveing locater :  -> css selector: #transferAmount]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having locater : -> xpath: //input[@value='Transfer Money']]]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> xpath: //span[contains(text(),'was successfully transferred from Account')]]]]>
+    </line>
+    <line>
+      <![CDATA[TRANSFER_FUND_PAGE_TEST : Passed]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having locater : -> link text: View Account Summary]]]>
+    </line>
+    <line>
+      <![CDATA[Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800003]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']]]]>
+    </line>
+    <line>
+      <![CDATA[Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800002]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']]]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Element having locater : -> xpath: //font[contains(text(),'Sign Off')]]]]>
+    </line>
+    <line>
+      <![CDATA[Element is present having locater: -> xpath: //font[contains(text(),'Sign In')]]]]>
+    </line>
+    <line>
+      <![CDATA[ACCOUNT_INFORMATION_PAGE_TEST : Passed]]>
+    </line>
+  </reporter-output>
+  <suite name="AltoroMutual Automation Execution" duration-ms="26962" started-at="2019-03-09T18:43:36Z" finished-at="2019-03-09T18:44:03Z">
+    <groups>
+    </groups>
+    <test name="Altoro Mutual Test" duration-ms="26962" started-at="2019-03-09T18:43:36Z" finished-at="2019-03-09T18:44:03Z">
+      <class name="assessment_AltoroMutual_Tests.AltoroMutual_Test">
+        <test-method status="PASS" signature="setUpResources()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="setUpResources" is-config="true" duration-ms="141" started-at="2019-03-09T18:43:36Z" finished-at="2019-03-09T18:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpResources -->
+        <test-method status="PASS" signature="startClass()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="startClass" is-config="true" duration-ms="5867" started-at="2019-03-09T18:43:36Z" finished-at="2019-03-09T18:43:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startClass -->
+        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="startMethod" is-config="true" duration-ms="6" started-at="2019-03-09T18:43:42Z" finished-at="2019-03-09T18:43:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void assessment_AltoroMutual_Tests.AltoroMutual_Test.login_page_test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="login_page_test()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="login_page_test" duration-ms="12726" started-at="2019-03-09T18:43:42Z" finished-at="2019-03-09T18:43:54Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is present having locater: -> xpath: //img[@src='/images/logo.gif']]]]>
+            </line>
+            <line>
+              <![CDATA[Element is present having locater: -> link text: ONLINE BANKING LOGIN]]]>
+            </line>
+            <line>
+              <![CDATA[Element is present having locater: -> css selector: #LinkHeader2]]]>
+            </line>
+            <line>
+              <![CDATA[Element is present having locater: -> css selector: #LinkHeader3]]]>
+            </line>
+            <line>
+              <![CDATA[Element is present having locater: -> css selector: #LinkHeader4]]]>
+            </line>
+            <line>
+              <![CDATA[Credentials Set successfully]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Element having locater : -> xpath: //input[@value='Login']]]]>
+            </line>
+            <line>
+              <![CDATA[Element is present having locater: -> xpath: //span[@id='_ctl0__ctl0_Content_Main_message']]]]>
+            </line>
+            <line>
+              <![CDATA[Credentials Set successfully]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Element having locater : -> xpath: //input[@value='Login']]]]>
+            </line>
+            <line>
+              <![CDATA[Element is present having locater: -> xpath: //h1[contains(text(),'Hello John Smith')]]]]>
+            </line>
+            <line>
+              <![CDATA[LOGIN_PAGE_TEST : Passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_page_test -->
+        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="killMethod" is-config="true" duration-ms="267" started-at="2019-03-09T18:43:54Z" finished-at="2019-03-09T18:43:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void assessment_AltoroMutual_Tests.AltoroMutual_Test.login_page_test()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=login_page_test status=SUCCESS method=AltoroMutual_Test.login_page_test()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43] output=Element is present having locater: -> xpath: //img[@src='/images/logo.gif']]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killMethod -->
+        <test-method status="PASS" signature="online_banking_home_page_test()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="online_banking_home_page_test" duration-ms="1980" started-at="2019-03-09T18:43:55Z" depends-on-methods="assessment_AltoroMutual_Tests.AltoroMutual_Test.login_page_test" finished-at="2019-03-09T18:43:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is present having locater: -> xpath: //select[@name='listAccounts']]]]>
+            </line>
+            <line>
+              <![CDATA[Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800003]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']]]]>
+            </line>
+            <line>
+              <![CDATA[Element is present having locater: -> xpath: //h1[contains(text(),'Account History -')]]]]>
+            </line>
+            <line>
+              <![CDATA[String contains Today's Date : Ending balance as of 3/10/19 1:43 PM]]>
+            </line>
+            <line>
+              <![CDATA[ONLINE_BANKING_HOME_PAGE_TEST : Passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- online_banking_home_page_test -->
+        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="startMethod" is-config="true" duration-ms="0" started-at="2019-03-09T18:43:55Z" finished-at="2019-03-09T18:43:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void assessment_AltoroMutual_Tests.AltoroMutual_Test.online_banking_home_page_test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="killMethod" is-config="true" duration-ms="68" started-at="2019-03-09T18:43:57Z" finished-at="2019-03-09T18:43:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void assessment_AltoroMutual_Tests.AltoroMutual_Test.online_banking_home_page_test()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=online_banking_home_page_test status=SUCCESS method=AltoroMutual_Test.online_banking_home_page_test()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43] output=Element is present having locater: -> xpath: //select[@name='listAccounts']]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killMethod -->
+        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="startMethod" is-config="true" duration-ms="0" started-at="2019-03-09T18:43:57Z" finished-at="2019-03-09T18:43:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void assessment_AltoroMutual_Tests.AltoroMutual_Test.transfer_fund_page_test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="transfer_fund_page_test()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="transfer_fund_page_test" duration-ms="1404" started-at="2019-03-09T18:43:57Z" depends-on-methods="assessment_AltoroMutual_Tests.AltoroMutual_Test.online_banking_home_page_test" finished-at="2019-03-09T18:43:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Element having locater : -> xpath: //a[contains(text(),'Transfer Funds')]]]]>
+            </line>
+            <line>
+              <![CDATA[Element is present having locater: -> xpath: //h1[contains(text(),'Transfer Funds')]]]]>
+            </line>
+            <line>
+              <![CDATA[Element is selected having locater :  -> xpath: //select[@id='fromAccount']] and Value : 800003]]>
+            </line>
+            <line>
+              <![CDATA[Element is selected having locater :  -> css selector: #toAccount] and Value : 800002]]>
+            </line>
+            <line>
+              <![CDATA[Sendkeys performed on Element haveing locater :  -> css selector: #transferAmount]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Element having locater : -> xpath: //input[@value='Transfer Money']]]]>
+            </line>
+            <line>
+              <![CDATA[Element is present having locater: -> xpath: //span[contains(text(),'was successfully transferred from Account')]]]]>
+            </line>
+            <line>
+              <![CDATA[TRANSFER_FUND_PAGE_TEST : Passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- transfer_fund_page_test -->
+        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="killMethod" is-config="true" duration-ms="48" started-at="2019-03-09T18:43:58Z" finished-at="2019-03-09T18:43:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void assessment_AltoroMutual_Tests.AltoroMutual_Test.transfer_fund_page_test()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=transfer_fund_page_test status=SUCCESS method=AltoroMutual_Test.transfer_fund_page_test()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43] output=Clicked on Element having locater : -> xpath: //a[contains(text(),'Transfer Funds')]]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killMethod -->
+        <test-method status="PASS" signature="startMethod(java.lang.reflect.Method)[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="startMethod" is-config="true" duration-ms="2" started-at="2019-03-09T18:43:58Z" finished-at="2019-03-09T18:43:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void assessment_AltoroMutual_Tests.AltoroMutual_Test.account_information_page_test()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="account_information_page_test()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="account_information_page_test" duration-ms="3727" started-at="2019-03-09T18:43:58Z" depends-on-methods="assessment_AltoroMutual_Tests.AltoroMutual_Test.transfer_fund_page_test" finished-at="2019-03-09T18:44:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Element having locater : -> link text: View Account Summary]]]>
+            </line>
+            <line>
+              <![CDATA[Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800003]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']]]]>
+            </line>
+            <line>
+              <![CDATA[Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800002]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']]]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Element having locater : -> xpath: //font[contains(text(),'Sign Off')]]]]>
+            </line>
+            <line>
+              <![CDATA[Element is present having locater: -> xpath: //font[contains(text(),'Sign In')]]]]>
+            </line>
+            <line>
+              <![CDATA[ACCOUNT_INFORMATION_PAGE_TEST : Passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- account_information_page_test -->
+        <test-method status="PASS" signature="killMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="killMethod" is-config="true" duration-ms="16" started-at="2019-03-09T18:44:02Z" finished-at="2019-03-09T18:44:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void assessment_AltoroMutual_Tests.AltoroMutual_Test.account_information_page_test()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=account_information_page_test status=SUCCESS method=AltoroMutual_Test.account_information_page_test()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43] output=Clicked on Element having locater : -> link text: View Account Summary]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killMethod -->
+        <test-method status="PASS" signature="killClass()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="killClass" is-config="true" duration-ms="808" started-at="2019-03-09T18:44:02Z" finished-at="2019-03-09T18:44:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killClass -->
+        <test-method status="PASS" signature="killResources()[pri:0, instance:assessment_AltoroMutual_Tests.AltoroMutual_Test@7cd62f43]" name="killResources" is-config="true" duration-ms="0" started-at="2019-03-09T18:44:03Z" finished-at="2019-03-09T18:44:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killResources -->
+      </class> <!-- assessment_AltoroMutual_Tests.AltoroMutual_Test -->
+    </test> <!-- Altoro Mutual Test -->
+  </suite> <!-- AltoroMutual Automation Execution -->
+</testng-results>

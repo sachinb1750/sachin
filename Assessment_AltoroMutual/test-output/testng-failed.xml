@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AltoroMutual Automation Execution]">
+  <listeners>
+    <listener class-name="assessment_AltoroMutual_Utils.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Altoro Mutual Test(failed)">
+    <classes>
+      <class name="assessment_AltoroMutual_Tests.AltoroMutual_Test">
+        <methods>
+          <include name="killClass"/>
+          <include name="transfer_fund_page_test"/>
+          <include name="account_information_page_test"/>
+          <include name="startClass"/>
+          <include name="login_page_test"/>
+          <include name="online_banking_home_page_test"/>
+          <include name="startMethod"/>
+          <include name="setUpResources"/>
+          <include name="killResources"/>
+          <include name="killMethod"/>
+        </methods>
+      </class> <!-- assessment_AltoroMutual_Tests.AltoroMutual_Test -->
+    </classes>
+  </test> <!-- Altoro Mutual Test(failed) -->
+</suite> <!-- Failed suite [AltoroMutual Automation Execution] -->

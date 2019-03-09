@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="assessment_AltoroMutual_Tests.AltoroMutual_Test">
+        <methods>
+          <include name="killClass"/>
+          <include name="startClass"/>
+          <include name="login_page_test"/>
+          <include name="startMethod"/>
+          <include name="setUpResources"/>
+          <include name="killResources"/>
+          <include name="killMethod"/>
+        </methods>
+      </class> <!-- assessment_AltoroMutual_Tests.AltoroMutual_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
