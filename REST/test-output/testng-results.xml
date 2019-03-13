@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2531" started-at="2019-03-13T18:44:11Z" finished-at="2019-03-13T18:44:14Z">
+  <suite name="Default suite" duration-ms="3122" started-at="2019-03-13T19:22:14Z" finished-at="2019-03-13T19:22:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2531" started-at="2019-03-13T18:44:11Z" finished-at="2019-03-13T18:44:14Z">
-      <class name="Basics2">
-        <test-method status="PASS" signature="restdemo()[pri:0, instance:Basics2@685cb137]" name="restdemo" duration-ms="2504" started-at="2019-03-13T18:44:11Z" finished-at="2019-03-13T18:44:14Z">
+    <test name="Default test" duration-ms="3122" started-at="2019-03-13T19:22:14Z" finished-at="2019-03-13T19:22:17Z">
+      <class name="Basics3CreateDelete">
+        <test-method status="PASS" signature="restdemo()[pri:0, instance:Basics3CreateDelete@685cb137]" name="restdemo" duration-ms="3098" started-at="2019-03-13T19:22:14Z" finished-at="2019-03-13T19:22:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restdemo -->
-      </class> <!-- Basics2 -->
+      </class> <!-- Basics3CreateDelete -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
