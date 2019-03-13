@@ -1,16 +1,11 @@
 package assessment_AltoroMutual_pages;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Iterator;
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import assessment_AltoroMutual_Utils.BaseClass;
 import assessment_AltoroMutual_Utils.CommonFunctions;
 
 public class AltoroMutual_AccountInformationPage {
@@ -36,24 +31,24 @@ public class AltoroMutual_AccountInformationPage {
 	@FindBy(xpath = "//font[contains(text(),'Sign In')]")
 	public WebElement signIn;
 	
-	public void performSendKeys(WebElement element, String keys) {
+	public void performSendKeys(WebElement element, String keys) throws Exception {
 		CommonFunctions.performSendKeys(element, keys);
 	}
 
-	public void verifyElement(WebElement element) {
-		CommonFunctions.verifyElement(element);
+	public String verifyElement(WebElement element) throws Exception {
+		return CommonFunctions.verifyElement(element);
 	}
 
-	public void performSelectElementByValue(WebElement element, String value) {
+	public void performSelectElementByValue(WebElement element, String value) throws Exception {
 		CommonFunctions.performSelectElementByValue(element, value);
 	}
 
-	public void performClick(WebElement element) {
+	public void performClick(WebElement element) throws Exception {
 		// TODO Auto-generated method stub
 		CommonFunctions.performClick(element);
 	}
 	
-	public void verifyTransaction(String format, String desc, String amount) {
-		CommonFunctions.verifyTransaction(recentTran, format, desc, amount);
+	public boolean verifyTransaction(String format, String desc, String amount) throws Exception {
+		return CommonFunctions.verifyTransaction(recentTran, format, desc, amount);
 	}
 }

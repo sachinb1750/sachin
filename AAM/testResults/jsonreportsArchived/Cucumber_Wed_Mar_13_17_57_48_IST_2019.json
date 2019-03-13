@@ -1,0 +1,98 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5031162808,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeCucumber()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validate E2E flow on Altoro Mutual Application",
+        "description": "",
+        "id": "login-into-application;validate-e2e-flow-on-altoro-mutual-application",
+        "after": [
+          {
+            "result": {
+              "duration": 846576214,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterCucumber()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4067208396,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "login page test",
+            "match": {
+              "location": "MyStepDefinitions.login_page_test()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1605658038,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "online banking home page test",
+            "match": {
+              "location": "MyStepDefinitions.online_banking_home_page_test()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1840720558,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "transfer fund page test",
+            "match": {
+              "location": "MyStepDefinitions.transfer_fund_page_test()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3710151739,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "account information page test",
+            "match": {
+              "location": "MyStepDefinitions.account_information_page_test()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login into Application",
+    "description": "",
+    "id": "login-into-application",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AltoroMutual"
+      }
+    ]
+  }
+]

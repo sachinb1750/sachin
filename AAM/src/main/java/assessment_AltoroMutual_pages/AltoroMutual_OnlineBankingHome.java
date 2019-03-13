@@ -19,25 +19,26 @@ public class AltoroMutual_OnlineBankingHome {
 	public WebElement verifyAccount;
 
 	@FindBy(xpath = "//td[contains(text(),'Ending balance as of')]")
-	public WebElement verifyDate;
+	public WebElement verifyDateText;
 
-	public void performSendKeys(WebElement element, String keys) {
+	public void performSendKeys(WebElement element, String keys) throws Exception {
 		CommonFunctions.performSendKeys(element, keys);
 	}
 
-	public void performClick(WebElement element) {
+	public void performClick(WebElement element) throws Exception {
 		CommonFunctions.performClick(element);
 	}
 
-	public void verifyElement(WebElement element) {
-		CommonFunctions.verifyElement(element);
+	public String verifyElement(WebElement element) throws Exception {
+		return CommonFunctions.verifyElement(element);
 	}
 
-	public void performSelectElementByValue(WebElement element, String value) {
+	public void performSelectElementByValue(WebElement element, String value) throws Exception {
 		CommonFunctions.performSelectElementByValue(element, value);
 	}
-	public void verifyDateMMDDYY(WebElement element, String seprator) {
+
+	public boolean verifyTodayDateMMDDYY(WebElement element) throws Exception {
 		String dateStr = element.getText();
-		CommonFunctions.verifyDateMMddyy(dateStr, seprator, "MM/dd/yy");
+		return CommonFunctions.verifyTodayDateMMddyy(dateStr, "/", "MM/dd/yy");
 	}
 }

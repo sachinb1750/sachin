@@ -33,6 +33,11 @@ public class Constants {
 	private static final String RUNNER_JSON_PATH="./src/test/resources/jsonFiles/Runner.json";
 	private static final String TEST_RUN_CONFIG_PATH="./src/test/resources/jsonFiles/testRunConfigurations.json";
 	
+	private static final String JENKINS_REPORTS_PATH = "./testResults/";
+	
+	private static final String JSON_PATH = "./testResults/";
+	private static final String ARCHIVED_JSON_PATH = "./testResults/jsonreportsArchived/";
+	
 	public static String getChromePath() {
 		return CHROME_PATH;
 	}
@@ -93,6 +98,18 @@ public class Constants {
 	
 	public static String getExtentReportsPath() {
 		return EXTENTREPORT_PATH;
+	}
+
+	public static String getJenkinsReportsPath() {
+		return JENKINS_REPORTS_PATH;
+	}
+
+	public static String getJsonReportPath() {
+		return JSON_PATH;
+	}
+
+	public static String getArchivedJsonPath() {
+		return ARCHIVED_JSON_PATH;
 	}
 
 }

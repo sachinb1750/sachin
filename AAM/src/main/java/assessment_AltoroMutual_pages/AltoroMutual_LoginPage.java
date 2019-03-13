@@ -39,19 +39,19 @@ public class AltoroMutual_LoginPage{
 	@FindBy(xpath = "//h1[contains(text(),'Hello John Smith')]")
 	public WebElement welcomeUser;
 
-	public void setCredentials(String user, String pwd) {
+	public void setCredentials(String user, String pwd) throws Exception {
 		CommonFunctions.setCredentials(userid, userpwd, user, pwd);
 	}
 
-	public void performSendKeys(WebElement element, String keys) {
+	public void performSendKeys(WebElement element, String keys) throws Exception {
 		CommonFunctions.performSendKeys(element, keys);
 	}
 
-	public void performClick(WebElement element) {
+	public void performClick(WebElement element) throws Exception {
 		CommonFunctions.performClick(element);
 	}
 
-	public void verifyElement(WebElement element) {
-		CommonFunctions.verifyElement(element);
+	public String  verifyElement(WebElement element) throws Exception {
+		return CommonFunctions.verifyElement(element);
 	}
 }

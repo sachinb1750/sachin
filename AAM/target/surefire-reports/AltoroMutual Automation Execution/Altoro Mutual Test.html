@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>TestNG:  Altoro Mutual Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Altoro Mutual Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 13 18:30:10 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>18 seconds (18566 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='assessment_AltoroMutual_Tests.AltoroMutual_Test.account_information_page_test()'><b>account_information_page_test</b><br>Test class: assessment_AltoroMutual_Tests.AltoroMutual_Test<br/>
+<a href="#Output-1612853208" onClick='toggleBox("Output-1612853208", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1612853208" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1612853208">
+<br>Clicked on Element having locater : -> link text: View Account Summary] : Passed<br/>
+<br>Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800003<br/>
+<br>With Value :     800002 Savings
+800003 Checking
+4539082039396288 Credit Card
+     <br> : Passed<br/>
+<br>Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']] : Passed<br/>
+<br>Transaction Found :  : 2019-03-13      : Withdrawal      : -$1010.00      : Passed<br/>
+<br>Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800002<br/>
+<br>With Value :        800003 Checking
+800002 Savings
+4539082039396288 Credit Card
+      <br> : Passed<br/>
+<br>Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']] : Passed<br/>
+<br>Transaction Found :  : 2019-03-13      : Deposit      : $1010.00      : Passed<br/>
+<br>Clicked on Element having locater : -> xpath: //font[contains(text(),'Sign Off')]] : Passed<br/>
+<br>Element is present having locater: -> xpath: //font[contains(text(),'Sign In')]]<br/>
+<br>With Value : Sign In<br> : Passed<br/>
+ACCOUNT_INFORMATION_PAGE_TEST : Passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>assessment_AltoroMutual_Tests.AltoroMutual_Test@5afa04c</td></tr>
+<tr>
+<td title='assessment_AltoroMutual_Tests.AltoroMutual_Test.login_page_test()'><b>login_page_test</b><br>Test class: assessment_AltoroMutual_Tests.AltoroMutual_Test<br/>
+<a href="#Output-528591360" onClick='toggleBox("Output-528591360", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-528591360" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-528591360">
+<br>Element is present having locater: -> xpath: //img[@src='/images/logo.gif']]<br/>
+<br>Element is present having locater: -> link text: ONLINE BANKING LOGIN]<br/>
+<br>With Value : ONLINE BANKING LOGIN<br> : Passed<br/>
+<br>Element is present having locater: -> css selector: #LinkHeader2]<br/>
+<br>With Value : PERSONAL<br> : Passed<br/>
+<br>Element is present having locater: -> css selector: #LinkHeader3]<br/>
+<br>With Value : SMALL BUSINESS<br> : Passed<br/>
+<br>Element is present having locater: -> css selector: #LinkHeader4]<br/>
+<br>With Value : INSIDE ALTORO MUTUAL<br> : Passed<br/>
+<br>Element is present having locater: -> link text: ONLINE BANKING LOGIN]<br/>
+<br>With Value : ONLINE BANKING LOGIN<br> : Passed<br/>
+<br>Element is present having locater: -> css selector: #LinkHeader2]<br/>
+<br>With Value : PERSONAL<br> : Passed<br/>
+<br>Element is present having locater: -> css selector: #LinkHeader3]<br/>
+<br>With Value : SMALL BUSINESS<br> : Passed<br/>
+<br>Element is present having locater: -> css selector: #LinkHeader4]<br/>
+<br>With Value : INSIDE ALTORO MUTUAL<br> : Passed<br/>
+<br>Credentials Set successfully : Passed<br/>
+<br>Clicked on Element having locater : -> xpath: //input[@value='Login']] : Passed<br/>
+<br>Element is present having locater: -> xpath: //span[@id='_ctl0__ctl0_Content_Main_message']]<br/>
+<br>With Value : Login Failed: We're sorry, but this username or password was not found in our system. Please try again.<br> : Passed<br/>
+<br>Element is present having locater: -> xpath: //span[@id='_ctl0__ctl0_Content_Main_message']]<br/>
+<br>With Value : Login Failed: We're sorry, but this username or password was not found in our system. Please try again.<br> : Passed<br/>
+<br>Credentials Set successfully : Passed<br/>
+<br>Clicked on Element having locater : -> xpath: //input[@value='Login']] : Passed<br/>
+<br>Element is present having locater: -> xpath: //h1[contains(text(),'Hello John Smith')]]<br/>
+<br>With Value : Hello John Smith<br> : Passed<br/>
+<br>Element is present having locater: -> xpath: //h1[contains(text(),'Hello John Smith')]]<br/>
+<br>With Value : Hello John Smith<br> : Passed<br/>
+LOGIN_PAGE_TEST : Passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>assessment_AltoroMutual_Tests.AltoroMutual_Test@5afa04c</td></tr>
+<tr>
+<td title='assessment_AltoroMutual_Tests.AltoroMutual_Test.online_banking_home_page_test()'><b>online_banking_home_page_test</b><br>Test class: assessment_AltoroMutual_Tests.AltoroMutual_Test<br/>
+<a href="#Output-1107204185" onClick='toggleBox("Output-1107204185", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1107204185" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1107204185">
+<br>Element is present having locater: -> xpath: //select[@name='listAccounts']]<br/>
+<br>With Value :     800002 Savings
+800003 Checking
+4539082039396288 Credit Card
+     <br> : Passed<br/>
+<br>Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800003<br/>
+<br>With Value :     800002 Savings
+800003 Checking
+4539082039396288 Credit Card
+     <br> : Passed<br/>
+<br>Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']] : Passed<br/>
+<br>Element is present having locater: -> xpath: //h1[contains(text(),'Account History -')]]<br/>
+<br>With Value : Account History - 800003 Checking<br> : Passed<br/>
+<br>Element is present having locater: -> xpath: //h1[contains(text(),'Account History -')]]<br/>
+<br>With Value : Account History - 800003 Checking<br> : Passed<br/>
+<br>String contains Today's Date : Ending balance as of 3/13/19 8:00 AM : Passed<br/>
+<br>String contains Today's Date : Ending balance as of 3/13/19 8:00 AM : Passed<br/>
+ONLINE_BANKING_HOME_PAGE_TEST : Passed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>assessment_AltoroMutual_Tests.AltoroMutual_Test@5afa04c</td></tr>
+<tr>
+<td title='assessment_AltoroMutual_Tests.AltoroMutual_Test.transfer_fund_page_test()'><b>transfer_fund_page_test</b><br>Test class: assessment_AltoroMutual_Tests.AltoroMutual_Test<br/>
+<a href="#Output-1460126155" onClick='toggleBox("Output-1460126155", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1460126155" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1460126155">
+<br>Clicked on Element having locater : -> xpath: //a[contains(text(),'Transfer Funds')]] : Passed<br/>
+<br>Element is present having locater: -> xpath: //h1[contains(text(),'Transfer Funds')]]<br/>
+<br>With Value : Transfer Funds<br> : Passed<br/>
+<br>Element is selected having locater :  -> xpath: //select[@id='fromAccount']] and Value : 800003<br/>
+<br>With Value :     800002 Savings
+800003 Checking
+4539082039396288 Credit Card
+     <br> : Passed<br/>
+<br>Element is selected having locater :  -> css selector: #toAccount] and Value : 800002<br/>
+<br>With Value :     800002 Savings
+800003 Checking
+4539082039396288 Credit Card
+     <br> : Passed<br/>
+Sendkeys performed on Element haveing locater :  -> css selector: #transferAmount]<br/>
+<br>Clicked on Element having locater : -> xpath: //input[@value='Transfer Money']] : Passed<br/>
+<br>Element is present having locater: -> xpath: //span[contains(text(),'was successfully transferred from Account')]]<br/>
+<br>With Value : 1010.0 was successfully transferred from Account 800003 into Account 800002 at 3/13/19 8:00 AM.<br> : Passed<br/>
+TRANSFER_FUND_PAGE_TEST : Passed<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>assessment_AltoroMutual_Tests.AltoroMutual_Test@5afa04c</td></tr>
+</table><p>
+</body>
+</html>

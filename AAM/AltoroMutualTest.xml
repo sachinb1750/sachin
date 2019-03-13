@@ -7,8 +7,9 @@
 	</listeners>
 
 	<test name="Altoro Mutual Test">
-		<packages>
-			<package name="assessment_AltoroMutual_Tests"></package>
-		</packages>
+		<classes>
+			<class name="assessment_AltoroMutual_Tests.AltoroMutual_Test" />
+
+		</classes>
 	</test>
 </suite> <!-- AltoroMutual Automation Execution -->

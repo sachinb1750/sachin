@@ -37,19 +37,19 @@ public class AltoroMutual_TransferFundPage {
 	public
 	WebElement verifytransferMessage;
 	
-	public void performSendKeys(WebElement element, String keys) {
+	public void performSendKeys(WebElement element, String keys) throws Exception {
 		CommonFunctions.performSendKeys(element, keys);
 	}
 
-	public void verifyElement(WebElement element) {
-		CommonFunctions.verifyElement(element);
+	public String verifyElement(WebElement element) throws Exception {
+		return CommonFunctions.verifyElement(element);
 	}
 
-	public void performSelectElementByValue(WebElement element, String value) {
+	public void performSelectElementByValue(WebElement element, String value) throws Exception {
 		CommonFunctions.performSelectElementByValue(element, value);
 	}
 
-	public void performClick(WebElement element) {
+	public void performClick(WebElement element) throws Exception {
 		// TODO Auto-generated method stub
 		CommonFunctions.performClick(element);
 	}

@@ -8,23 +8,17 @@ package assessment_AltoroMutual_Utils;
 
 import java.lang.reflect.Method;
 import java.util.Properties;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.events.WebDriverEventListener;
-import org.testng.Assert;
 import org.testng.ITestResult;
-import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -102,12 +96,13 @@ public class BaseClass {
 	@AfterClass
 	public void killClass() {
 		DriverManager.killDriverInstance();
-		TestUtilities.archiveExtentReports(getClassName());
-		TestUtilities.archiveTestNgReports(getClassName());
+		
 	}
 
 	@AfterSuite
 	public void killResources() {
+		TestUtilities.archiveExtentReports();
+		TestUtilities.archiveTestNgReports();
 	}
 
 	//Gets the newly created test run id

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-AltoroMutual_Automation_Execution">
+              <span class="suite-name border-passed">AltoroMutual Automation Execution</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-AltoroMutual_Automation_Execution">
+                    <span>D:\git\repository\AAM\AltoroMutualTest.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-AltoroMutual_Automation_Execution">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-AltoroMutual_Automation_Execution">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-AltoroMutual_Automation_Execution">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-AltoroMutual_Automation_Execution">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-AltoroMutual_Automation_Execution">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-AltoroMutual_Automation_Execution">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AltoroMutual_Automation_Execution" class="hide-methods passed suite-AltoroMutual_Automation_Execution"> (hide)</a> <!-- hide-methods passed suite-AltoroMutual_Automation_Execution -->
+                      <a href="#" panel-name="suite-AltoroMutual_Automation_Execution" class="show-methods passed suite-AltoroMutual_Automation_Execution"> (show)</a> <!-- show-methods passed suite-AltoroMutual_Automation_Execution -->
+                    </span>
+                    <div class="method-list-content passed suite-AltoroMutual_Automation_Execution">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AltoroMutual_Automation_Execution" title="assessment_AltoroMutual_Tests.AltoroMutual_Test" hash-for-method="account_information_page_test">account_information_page_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AltoroMutual_Automation_Execution" title="assessment_AltoroMutual_Tests.AltoroMutual_Test" hash-for-method="login_page_test">login_page_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AltoroMutual_Automation_Execution" title="assessment_AltoroMutual_Tests.AltoroMutual_Test" hash-for-method="online_banking_home_page_test">online_banking_home_page_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AltoroMutual_Automation_Execution" title="assessment_AltoroMutual_Tests.AltoroMutual_Test" hash-for-method="transfer_fund_page_test">transfer_fund_page_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AltoroMutual_Automation_Execution -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AltoroMutual_Automation_Execution" class="panel AltoroMutual_Automation_Execution">
+          <div class="suite-AltoroMutual_Automation_Execution-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">assessment_AltoroMutual_Tests.AltoroMutual_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="account_information_page_test">
+                  </a> <!-- account_information_page_test -->
+                  <span class="method-name">account_information_page_test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_page_test">
+                  </a> <!-- login_page_test -->
+                  <span class="method-name">login_page_test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="online_banking_home_page_test">
+                  </a> <!-- online_banking_home_page_test -->
+                  <span class="method-name">online_banking_home_page_test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="transfer_fund_page_test">
+                  </a> <!-- transfer_fund_page_test -->
+                  <span class="method-name">transfer_fund_page_test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AltoroMutual_Automation_Execution-class-passed -->
+        </div> <!-- panel AltoroMutual_Automation_Execution -->
+        <div panel-name="test-xml-AltoroMutual_Automation_Execution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\git\repository\AAM\AltoroMutualTest.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;AltoroMutual Automation Execution&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;assessment_AltoroMutual_Utils.CustomListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Altoro Mutual Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;assessment_AltoroMutual_Tests.AltoroMutual_Test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Altoro Mutual Test --&gt;
+&lt;/suite&gt; &lt;!-- AltoroMutual Automation Execution --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AltoroMutual_Automation_Execution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AltoroMutual Automation Execution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Altoro Mutual Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AltoroMutual_Automation_Execution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AltoroMutual Automation Execution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AltoroMutual_Automation_Execution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AltoroMutual Automation Execution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AltoroMutual_Automation_Execution');
+function tableData_AltoroMutual_Automation_Execution() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'account_information_page_test')
+data.setCell(0, 2, 'assessment_AltoroMutual_Tests.AltoroMutual_Test')
+data.setCell(0, 3, 3921);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'login_page_test')
+data.setCell(1, 2, 'assessment_AltoroMutual_Tests.AltoroMutual_Test')
+data.setCell(1, 3, 3685);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'transfer_fund_page_test')
+data.setCell(2, 2, 'assessment_AltoroMutual_Tests.AltoroMutual_Test')
+data.setCell(2, 3, 1845);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'online_banking_home_page_test')
+data.setCell(3, 2, 'assessment_AltoroMutual_Tests.AltoroMutual_Test')
+data.setCell(3, 3, 1567);
+window.suiteTableData['AltoroMutual_Automation_Execution']= { tableData: data, tableDiv: 'times-div-AltoroMutual_Automation_Execution'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-AltoroMutual_Automation_Execution">
+              </div> <!-- times-div-AltoroMutual_Automation_Execution -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AltoroMutual_Automation_Execution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AltoroMutual Automation Execution</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">login_page_test</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //img[@src='/images/logo.gif']]</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> link text: ONLINE BANKING LOGIN]</span>
+                <span class="reporter-method-output"><br>With Value : ONLINE BANKING LOGIN<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> css selector: #LinkHeader2]</span>
+                <span class="reporter-method-output"><br>With Value : PERSONAL<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> css selector: #LinkHeader3]</span>
+                <span class="reporter-method-output"><br>With Value : SMALL BUSINESS<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> css selector: #LinkHeader4]</span>
+                <span class="reporter-method-output"><br>With Value : INSIDE ALTORO MUTUAL<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> link text: ONLINE BANKING LOGIN]</span>
+                <span class="reporter-method-output"><br>With Value : ONLINE BANKING LOGIN<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> css selector: #LinkHeader2]</span>
+                <span class="reporter-method-output"><br>With Value : PERSONAL<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> css selector: #LinkHeader3]</span>
+                <span class="reporter-method-output"><br>With Value : SMALL BUSINESS<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> css selector: #LinkHeader4]</span>
+                <span class="reporter-method-output"><br>With Value : INSIDE ALTORO MUTUAL<br> : Passed</span>
+                <span class="reporter-method-output"><br>Credentials Set successfully : Passed</span>
+                <span class="reporter-method-output"><br>Clicked on Element having locater : -> xpath: //input[@value='Login']] : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //span[@id='_ctl0__ctl0_Content_Main_message']]</span>
+                <span class="reporter-method-output"><br>With Value : Login Failed: We're sorry, but this username or password was not found in our system. Please try again.<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //span[@id='_ctl0__ctl0_Content_Main_message']]</span>
+                <span class="reporter-method-output"><br>With Value : Login Failed: We're sorry, but this username or password was not found in our system. Please try again.<br> : Passed</span>
+                <span class="reporter-method-output"><br>Credentials Set successfully : Passed</span>
+                <span class="reporter-method-output"><br>Clicked on Element having locater : -> xpath: //input[@value='Login']] : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //h1[contains(text(),'Hello John Smith')]]</span>
+                <span class="reporter-method-output"><br>With Value : Hello John Smith<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //h1[contains(text(),'Hello John Smith')]]</span>
+                <span class="reporter-method-output"><br>With Value : Hello John Smith<br> : Passed</span>
+                <span class="reporter-method-output">LOGIN_PAGE_TEST : Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">online_banking_home_page_test</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //select[@name='listAccounts']]</span>
+                <span class="reporter-method-output"><br>With Value :     800002 Savings
+800003 Checking
+4539082039396288 Credit Card
+     <br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800003</span>
+                <span class="reporter-method-output"><br>With Value :     800002 Savings
+800003 Checking
+4539082039396288 Credit Card
+     <br> : Passed</span>
+                <span class="reporter-method-output"><br>Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']] : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //h1[contains(text(),'Account History -')]]</span>
+                <span class="reporter-method-output"><br>With Value : Account History - 800003 Checking<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //h1[contains(text(),'Account History -')]]</span>
+                <span class="reporter-method-output"><br>With Value : Account History - 800003 Checking<br> : Passed</span>
+                <span class="reporter-method-output"><br>String contains Today's Date : Ending balance as of 3/13/19 8:00 AM : Passed</span>
+                <span class="reporter-method-output"><br>String contains Today's Date : Ending balance as of 3/13/19 8:00 AM : Passed</span>
+                <span class="reporter-method-output">ONLINE_BANKING_HOME_PAGE_TEST : Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">account_information_page_test</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br>Clicked on Element having locater : -> link text: View Account Summary] : Passed</span>
+                <span class="reporter-method-output"><br>Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800003</span>
+                <span class="reporter-method-output"><br>With Value :     800002 Savings
+800003 Checking
+4539082039396288 Credit Card
+     <br> : Passed</span>
+                <span class="reporter-method-output"><br>Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']] : Passed</span>
+                <span class="reporter-method-output"><br>Transaction Found :  : 2019-03-13      : Withdrawal      : -$1010.00      : Passed</span>
+                <span class="reporter-method-output"><br>Element is selected having locater :  -> xpath: //select[@name='listAccounts']] and Value : 800002</span>
+                <span class="reporter-method-output"><br>With Value :        800003 Checking
+800002 Savings
+4539082039396288 Credit Card
+      <br> : Passed</span>
+                <span class="reporter-method-output"><br>Clicked on Element having locater : -> xpath: //input[@id='btnGetAccount']] : Passed</span>
+                <span class="reporter-method-output"><br>Transaction Found :  : 2019-03-13      : Deposit      : $1010.00      : Passed</span>
+                <span class="reporter-method-output"><br>Clicked on Element having locater : -> xpath: //font[contains(text(),'Sign Off')]] : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //font[contains(text(),'Sign In')]]</span>
+                <span class="reporter-method-output"><br>With Value : Sign In<br> : Passed</span>
+                <span class="reporter-method-output">ACCOUNT_INFORMATION_PAGE_TEST : Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">transfer_fund_page_test</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br>Clicked on Element having locater : -> xpath: //a[contains(text(),'Transfer Funds')]] : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //h1[contains(text(),'Transfer Funds')]]</span>
+                <span class="reporter-method-output"><br>With Value : Transfer Funds<br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is selected having locater :  -> xpath: //select[@id='fromAccount']] and Value : 800003</span>
+                <span class="reporter-method-output"><br>With Value :     800002 Savings
+800003 Checking
+4539082039396288 Credit Card
+     <br> : Passed</span>
+                <span class="reporter-method-output"><br>Element is selected having locater :  -> css selector: #toAccount] and Value : 800002</span>
+                <span class="reporter-method-output"><br>With Value :     800002 Savings
+800003 Checking
+4539082039396288 Credit Card
+     <br> : Passed</span>
+                <span class="reporter-method-output">Sendkeys performed on Element haveing locater :  -> css selector: #transferAmount]</span>
+                <span class="reporter-method-output"><br>Clicked on Element having locater : -> xpath: //input[@value='Transfer Money']] : Passed</span>
+                <span class="reporter-method-output"><br>Element is present having locater: -> xpath: //span[contains(text(),'was successfully transferred from Account')]]</span>
+                <span class="reporter-method-output"><br>With Value : 1010.0 was successfully transferred from Account 800003 into Account 800002 at 3/13/19 8:00 AM.<br> : Passed</span>
+                <span class="reporter-method-output">TRANSFER_FUND_PAGE_TEST : Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AltoroMutual_Automation_Execution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AltoroMutual_Automation_Execution" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">assessment_AltoroMutual_Tests.AltoroMutual_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpResources</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">startClass</span>
+                <span class="method-start">163 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startMethod(public void assessment_AltoroMutual_Tests.AltoroMutual_Test.login_page_test())</span>
+                <span class="method-start">6282 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login_page_test</span>
+                <span class="method-start">6293 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">killMethod(public void assessment_AltoroMutual_Tests.AltoroMutual_Test.login_page_test(), [TestResult name=logi...)</span>
+                <span class="method-start">9980 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startMethod(public void assessment_AltoroMutual_Tests.AltoroMutual_Test.online_banking_home_page_test())</span>
+                <span class="method-start">10394 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">online_banking_home_page_test</span>
+                <span class="method-start">10400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">killMethod(public void assessment_AltoroMutual_Tests.AltoroMutual_Test.online_banking_home_page_test(), [TestRe...)</span>
+                <span class="method-start">11968 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startMethod(public void assessment_AltoroMutual_Tests.AltoroMutual_Test.transfer_fund_page_test())</span>
+                <span class="method-start">12031 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">transfer_fund_page_test</span>
+                <span class="method-start">12047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">killMethod(public void assessment_AltoroMutual_Tests.AltoroMutual_Test.transfer_fund_page_test(), [TestResult n...)</span>
+                <span class="method-start">13893 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startMethod(public void assessment_AltoroMutual_Tests.AltoroMutual_Test.account_information_page_test())</span>
+                <span class="method-start">13935 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">account_information_page_test</span>
+                <span class="method-start">13935 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">killMethod(public void assessment_AltoroMutual_Tests.AltoroMutual_Test.account_information_page_test(), [TestRe...)</span>
+                <span class="method-start">17858 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">killClass</span>
+                <span class="method-start">17917 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">killResources</span>
+                <span class="method-start">18738 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,5 @@
+stepDefinations\MyStepDefinitions.class
+assessment_AltoroMutual_Tests\AltoroMutual_Test.class
+cucumberOptions\TestRunner_TestNG.class
+stepDefinations\Hooks.class
+cucumberOptions\TestRunner.class
