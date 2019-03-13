@@ -5,17 +5,18 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 
 public class Basics3CreateDelete {
 	@Test
 	public void restdemo() {
 //	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		RestAssured.baseURI = "http://216.10.245.166";
-		//Giving query parameter for POST req here
-		given()
-			.queryParam("Key", "qaclick123")
-			.body("{"+
+		//Create a place and immediately delete once created
+				//Now integrating both above requests
+				
+				//Create - then get id and then delete based on that
+		String b = "{"+
 			    "\"location\":{"+
 		        "\"lat\" : -38.383494,"+
 		        "\"lng\" : 33.427362"+
@@ -27,20 +28,41 @@ public class Basics3CreateDelete {
 		    "\"types\": [\"shoe park\",\"shop\"],"+
 		    "\"website\" : \"http://google.com\","+
 		    "\"language\" : \"French-IN\""+
-		"}")
+		"}";
+		
+		// TODO Auto-generated method stub
+		RestAssured.baseURI = "http://216.10.245.166";
+		//Giving query parameter for POST req here
+		Response res = given()
+			.queryParam("Key", "qaclick123")
+			.body(b)
 				.when()
-					.get("/maps/api/place/add/json")
+					.post("/maps/api/place/add/json")
 						.then()
 							.assertThat()
 								.statusCode(200).and()
 								.contentType(ContentType.JSON).and()
-								.body("status", equalTo("OK"));
+								.body("status", equalTo("OK")).and()
+									.extract().response();
 		
-		//Create a place and immediately delete once created
-		//Now integrating both above requests
+		System.out.println("\nCreating Data : \n"+b);
+		System.out.println("\nCreate Data Response : \n"+res.asString());
 		
-		//Create - then get id and then delete based on that
+		JsonPath js = new JsonPath(res.asString());
+		System.out.println("\nGetting Place ID from Response : \n"+js.get("place_id").toString());
 		
+		//http://216.10.245.166/maps/api/place/delete/json?key=qaclick123
+		Response res2 = given()
+				.queryParam("key", "qaclick123")
+				.body("{\"place_id\":\""+(js.get("place_id").toString())+"\"}")
+				.when()
+				.post("maps/api/place/delete/json")
+					.then()
+						.statusCode(200).and()
+						.contentType(ContentType.JSON).and()
+						.body("status", equalTo("OK")).and().extract().response();
+		
+		System.out.println("\nDelete Status : \n"+res2.asString());
 		
 	}
 }
